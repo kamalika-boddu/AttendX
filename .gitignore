@@ -1,0 +1,40 @@
+# AttendX .gitignore - Security and build artifact rules
+
+# Environment Variables & Secrets (CRITICAL: Never commit secrets)
+.env
+.env.local
+.env.*.local
+backend/.env
+backend/.env.*.local
+*.pem
+*.key
+*.cert
+
+# Python virtual environment & cache
+venv/
+backend/venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+.pytest_cache/
+
+# Node & Frontend dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
